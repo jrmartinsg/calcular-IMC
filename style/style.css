@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url(../font/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto-Black";
+  src: url(../font/Roboto-Black.ttf);
+}
+* {
+  font-family: "Roboto-Regular", Helvetica, sans-serif;
+  background-color: #ededed;
+  margin: 0;
+  padding: 0;
+}
+
+/*-------------------Header-------------------*/
+
+header {
+  padding: 20px 100px;
+}
+header a {
+  display: block;
+  float: right;
+  font-size: 20px;
+  background-color: #ff5202;
+  color: #000;
+  text-decoration: none;
+  padding: 10px;
+  border: #000 2px solid;
+  cursor: pointer;
+}
+
+/*-------------------Section - Description IMC-------------------*/
+
+.description-IMC {
+  max-width: 800px;
+  margin: auto;
+  padding: 0 100px;
+}
+.about-IMC {
+  font-size: 25px;
+  text-align: justify;
+  margin-bottom: 15px;
+}
+.fonte {
+  font-size: 11px;
+  font-style: italic;
+  margin-bottom: 50px;
+}
+
+/*-------------------Main-------------------*/
+
+#posResultado {
+  display: none;
+}
+main, main h1, main p, main div {
+  background-color: #2f80e2;
+}
+main {
+  max-width: 400px;
+  margin: auto;
+  margin-top: 25px;
+  padding: 50px;
+  border: 1px solid #000;
+}
+main h1 {
+  font-family: "Roboto-Black";
+  text-align: center;
+}
+main p {
+  font-family: "Roboto-Black";
+  font-size: 20px;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+main input {
+  padding: 7px;
+  border: 1px solid #000;
+  background-color: #ededed;
+}
+main div {
+  margin-top: 30px;
+}
+div h2, div h4 {
+  background-color: #2f80e2;
+  font-family: "Roboto-Black";
+}
+div h2 {
+  font-size: 31px;
+  margin-bottom: 20px;
+}
+div h4 {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.classificacao {
+  display: inline-block;
+  font-size: 15px;
+  margin: 3px;
+  padding: 5px;
+}
+.nota {
+  font-size: 11px;
+  font-family: "Roboto-Black";
+}
+
+/*-------------------Button Calcular/Limpar-------------------*/
+
+.button-CalcLimpar {
+  text-align: center;
+  margin: 30px 0;
+}
+button {
+  margin-right: 20px;
+  font-size: 20px;
+  background-color: #ff5202;
+  color: #000;
+  padding: 10px;
+  border: #000 2px solid;
+  cursor: pointer;
+}
+
+/*-------------------Footer-------------------*/
+
+footer {
+  font-family: "Roboto-Black";
+  font-size: 12px;
+  text-align: center;
+  padding: 12px 0;
+  background-color: #ff5202;
+}
+
+/*-------------------Media Query-------------------*/
+
+@media screen and (max-width: 700px) {
+  .about-IMC {
+    font-size: 1.2rem;
+  }
+
+  .fonte {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  header {
+    padding: 1rem 2rem;
+  }
+  header img {
+    width: 5rem;
+  }
+  header a, button {
+    font-family: "Roboto-Black";
+    font-size: 0.8rem;
+  }
+  .about-IMC {
+    font-size: 0.8rem;
+  }
+
+  .fonte {
+    font-size: 0.7rem;
+  }
+  .description-IMC {
+    padding: 0 3rem;
+  }
+  main {
+    max-width: 250px;
+    padding: 1rem 3rem;
+  }
+  main h1 {
+    font-size: 1.5rem;
+  }
+  main p {
+    font-size: 1rem;
+    margin-top: 20px;
+    text-align: center;
+  }
+  main input {
+    display: block;
+    margin: auto;
+  }
+  div h2 {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  div h4 {
+    font-size: 1.2rem;
+  }
+  .classificacao {
+    font-size: 0.9rem;
+    margin: 1px 0;
+  }
+  .nota {
+    font-size: 0.4rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  div h2 {
+    font-size: 1.2rem;
+  }
+  .nota {
+    font-size: 2vw;
+  }
+}

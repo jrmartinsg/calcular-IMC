@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calcule seu IMC</title>
+    <link rel="shortcut icon" href="./img/imc-icon.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
+    <header>
+      <a id="linkCalcular" onclick="calcularFocus()">Calcular</a>
+      <img src="./img/imc-logo.png" alt="Logo IMC" />
+    </header>
+    <section class="description-IMC">
+      <p class="about-IMC">
+        Índice de Massa Corporal. Você já deve ter ouvido falar nisso. Talvez
+        apenas a sigla IMC. Mas você sabe que índice é este e o que ele pode
+        dizer sobre a sua saúde?
+      </p>
+      <p class="about-IMC">
+        Criado no século 19 pelo matemático Lambert Quételet, o Índice de Massa
+        Corporal, conhecido pela sigla IMC, é um cálculo simples que permite
+        medir se alguém está ou não com o peso ideal. Ele aponta se o peso está
+        adequado ou se está abaixo ou acima do peso.
+      </p>
+      <p class="about-IMC">
+        Para fazer o cálculo, basta dividir o peso pela altura ao quadrado. O
+        número final representa o quanto a pessoa tem de massa muscular + massa
+        de gordura + massa óssea. Com o resultado, o próximo passo é
+        interpretá-lo.
+      </p>
+    </section>
+    <main id="calcular">
+      <h1>Prencha seus dados abaixo</h1>
+      <p>Altura (Cm):</p>
+      <input id="altura" type="number" placeholder="Ex: 180" min="0" />
+      <p>Peso (Kg):</p>
+      <input id="peso" type="number" placeholder="Ex: 75" min="0" />
+      <div id="posResultado">
+        <h2 id="resultado"></h2>
+        <h4>Classificação do IMC</h4>
+        <p id="pesoBaixo" class="classificacao">Menor que 18,5 - Peso Baixo</p>
+        <p id="pesoSaudavel" class="classificacao">
+          Entre 18,5 a 25 - Peso Saudável
+        </p>
+        <p id="sobrepeso" class="classificacao">Entre 25 a 30 - Sobrepeso</p>
+        <p id="obesidadeI" class="classificacao">
+          Entre 30 a 35 - Obesidade Grau I
+        </p>
+        <p id="obesidadeII" class="classificacao">
+          Entre 35 a 40 - Obesidade Grau II
+        </p>
+        <p id="obesidadeIII" class="classificacao">
+          Maior que 40 - Obesidade Grau III
+        </p>
+        <p class="nota">
+          Nota: o cálculo de IMC não leva em consideração a composição corporal.
+          Por esse motivo, pessoas com muita massa muscular, como é o caso de
+          alguns atletas, podem apresentar um IMC acima do normal. O ideal é
+          consultar um nutricionista para fazer uma avaliação mais detalhada
+        </p>
+      </div>
+    </main>
+    <div class="button-CalcLimpar">
+      <button onclick="calcular()">Calcular</button>
+      <button onclick="limpar()">Limpar</button>
+    </div>
+    <section class="description-IMC">
+      <p class="about-IMC">
+        Quando o índice de massa corporal recomendado está excedido, é porque a
+        pessoa pode estar numa situação de sobrepeso com tendência à obesidade
+        ou já ter a obesidade.
+      </p>
+      <p class="about-IMC">
+        Portanto, o calculo pode ser feito em casa, mas, dependendo do
+        resultado, é importante procurar um médico para avaliar o grau de
+        sobrepeso ou obesidade. Ou o extremo oposto disso.
+      </p>
+      <p class="about-IMC">
+        Se o índice estiver muito abaixo da normalidade para o homem e para a
+        mulher indica que a pessoa pode estar no estado de desnutrição, de perda
+        expressiva de massa. E assim como a obesidade, também existem graus de
+        magreza.
+      </p>
+      <p class="about-IMC fonte">Fonte: Ministério da Saúde</p>
+    </section>
+    <footer>&copy; IMC Cálculo - Todos os direitos reservados.</footer>
+
+    <script src="./script/script.js"></script>
+  </body>
+</html>
