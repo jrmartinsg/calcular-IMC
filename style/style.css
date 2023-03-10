@@ -103,6 +103,7 @@ div h4 {
 .nota {
   font-size: 11px;
   font-family: "Roboto-Black";
+  text-align: justify;
 }
 
 /*-------------------Button Calcular/Limpar-------------------*/
